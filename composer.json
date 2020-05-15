@@ -1,16 +1,16 @@
 {
     "name": "sysbox/laravel-asset-manager",
     "description": "Asset Manage that allows your asset to be uploaded and attached to any Laravel Base Entity",
-    "license": "license",
+    "license": "MIT",
     "version": "1.0",
     "authors": [
         {
-            "name": "author name",
-            "email": "author email",
-            "homepage": "author homepage"
+            "name": "Lin He",
+            "email": "lin.he@sysbox.com.au",
+            "homepage": "http://sysbox.com.au"
         }
     ],
-    "homepage": "https://github.com/sysbox/laravelassetmanager",
+    "homepage": "https://github.com/sysbox-pty-ltd/laravel-asset-manager",
     "keywords": ["Laravel", "LaravelAssetManager"],
     "require": {
         "illuminate/support": "~5|~6|~7",
