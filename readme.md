@@ -49,9 +49,9 @@ license. Please see the [license file](license.md) for more information.
 [ico-travis]: https://img.shields.io/travis/sysbox/laravelassetmanager/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/12345678/shield
 
-[link-packagist]: https://packagist.org/packages/sysbox/laravelassetmanager
-[link-downloads]: https://packagist.org/packages/sysbox/laravelassetmanager
-[link-travis]: https://travis-ci.org/sysbox/laravelassetmanager
+[link-packagist]: https://packagist.org/packages/sysbox/laravel-asset-manager
+[link-downloads]: https://packagist.org/packages/sysbox/laravel-asset-manager
+[link-travis]: https://travis-ci.org/sysbox/laravel-asset-manager
 [link-styleci]: https://styleci.io/repos/12345678
-[link-author]: https://github.com/sysbox
+[link-author]: https://github.com/sysbox-pty-ltd
 [link-contributors]: ../../contributors

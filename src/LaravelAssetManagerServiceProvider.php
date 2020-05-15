@@ -31,7 +31,7 @@ class LaravelAssetManagerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/laravelassetmanager.php', 'LaravelAssetManager');
+        $this->mergeConfigFrom(__DIR__ . '/../config/laravelassetmanager.php', 'LaravelAssetManager');
 
         // Register the service the package provides.
         $this->app->singleton('LaravelAssetManager', function ($app) {
@@ -58,7 +58,7 @@ class LaravelAssetManagerServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/laravelassetmanager.php' => config_path('laravelassetmanager.php'),
+            __DIR__ . '/../config/laravelassetmanager.php' => config_path('laravelassetmanager.php'),
         ], 'LaravelAssetManager.config');
 
         // Publishing the views.

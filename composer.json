@@ -2,6 +2,7 @@
     "name": "sysbox/laravel-asset-manager",
     "description": "Asset Manage that allows your asset to be uploaded and attached to any Laravel Base Entity",
     "license": "license",
+    "version": "1.0",
     "authors": [
         {
             "name": "author name",
