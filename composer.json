@@ -1,0 +1,44 @@
+{
+    "name": "sysbox/laravel-asset-manager",
+    "description": "Asset Manage that allows your asset to be uploaded and attached to any Laravel Base Entity",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/sysbox/laravelassetmanager",
+    "keywords": ["Laravel", "LaravelAssetManager"],
+    "require": {
+        "illuminate/support": "~5|~6|~7",
+        "sysbox/larave-base-entity": "~1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sysbox\\LaravelAssetManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sysbox\\LaravelAssetManager\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sysbox\\LaravelAssetManager\\LaravelAssetManagerServiceProvider"
+            ],
+            "aliases": {
+                "LaravelAssetManager": "Sysbox\\LaravelAssetManager\\Facades\\LaravelAssetManager"
+            }
+        }
+    }
+}
