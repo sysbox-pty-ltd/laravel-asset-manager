@@ -15,7 +15,7 @@ class LaravelAssetManagerServiceProvider extends ServiceProvider
     {
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'sysbox');
         // $this->loadViewsFrom(__DIR__.'/../resources/views', 'sysbox');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         // Publishing is only necessary when using the CLI.
@@ -31,10 +31,10 @@ class LaravelAssetManagerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/laravelassetmanager.php', 'LaravelAssetManager');
+        $this->mergeConfigFrom(__DIR__ . '/../config/' . LaravelAssetManager::PACKAGE_NAME . '.php', LaravelAssetManager::PACKAGE_NAME);
 
         // Register the service the package provides.
-        $this->app->singleton('LaravelAssetManager', function ($app) {
+        $this->app->singleton(LaravelAssetManager::PACKAGE_NAME, function ($app) {
             return new LaravelAssetManager;
         });
     }
@@ -58,8 +58,8 @@ class LaravelAssetManagerServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__ . '/../config/laravelassetmanager.php' => config_path('laravelassetmanager.php'),
-        ], 'LaravelAssetManager.config');
+            __DIR__ . '/../config/' . LaravelAssetManager::PACKAGE_NAME . '.php' => config_path(LaravelAssetManager::PACKAGE_NAME . '.php'),
+        ], LaravelAssetManager::PACKAGE_NAME . '.config');
 
         // Publishing the views.
         /*$this->publishes([

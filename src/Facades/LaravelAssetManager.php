@@ -13,6 +13,6 @@ class LaravelAssetManager extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'laravelassetmanager';
+        return \Sysbox\LaravelAssetManager\LaravelAssetManager::PACKAGE_NAME;
     }
 }
